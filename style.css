@@ -711,8 +711,13 @@ p {
     flex: 1;
 }
 
-.screening-steps_left-content .heading-wrapper h1 {
+.screening-steps_left-content .heading-wrapper h2 {
     color: var(--color-primary);
+       font-family: 'CoFoSans';
+    font-size: 3.25rem;
+    line-height: 1.2;
+    letter-spacing: 0.1px;
+    font-weight: 600;
 }
 .screening-steps_right-content_wrapper{
     flex: 1;
