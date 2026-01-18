@@ -971,14 +971,42 @@ padding-bottom: 6rem;
 }
 
 /* Media Queries */
-
+@media screen and (min-width:1600px) and (max-width:1900px) {
+    html {
+        font-size: 14px;
+    }
+}
 @media screen and (min-width:1400px) and (max-width:1600px) {
     html {
-        font-size: 13px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    html {
+        font-size: 10px;
     }
 }
 
-@media screen and (min-width:991px) and (max-width:1400px) {
+@media screen and (min-width:991px) and (max-width:1200px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+}
+
+
+@media screen and (max-width:767px) {
+ 
+}
+
+@media screen and (max-width:479px) {
+
+}
+
+@media screen and (max-width:390px) {
     html {
         font-size: 12px;
     }
