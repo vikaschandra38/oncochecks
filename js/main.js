@@ -47,6 +47,13 @@ $(function () {
 
 });
 
+$('#menu-btn').click(function(){
+    $('.nav_links_container').toggleClass('active');
+});
+$('#close-btn').click(function(){
+    $('.nav_links_container').toggleClass('active');
+});
+
 
 // Carousel
      $('.carousel-main').slick({
