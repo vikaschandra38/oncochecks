@@ -48,7 +48,7 @@
 }
 
 .main_img_bg {
-    background-image: url(./assets/home-bg.jpg);
+    background-image: url(./assets/consultant-led-cancer-screening-london.webp.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -66,6 +66,7 @@
     letter-spacing: 0.5px;
     border: none;
     line-height: 1;
+            text-align: center;
 }
 
 .small_btn {
@@ -115,7 +116,7 @@ p {
     width: 30rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .navigation_container .nav_logo .nav_logo_image {
@@ -190,6 +191,51 @@ p {
     justify-content: center;
 }
 
+/* Terms and Conditions */
+
+.terms-and-conditions_content{
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+
+.terms-and-conditions-details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.terms-and-conditions-block{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.terms-and-conditions-block h2{
+        font-family: 'CoFoSans';
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1px;
+    color: var(--color-text);
+}
+.terms-and-conditions-block ul{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.terms-and-conditions-block ul li{
+     font-family: 'CoFoSans';
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.1px;
+    color: var(--color-text);
+}
+.terms-and-conditions_content>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.terms-and-conditions_content>p>span{
+    font-weight: 600;
+}
 /* Home Styles */
 
 .hero_container {
@@ -219,7 +265,24 @@ p {
 .hero_content .hero_content_right {
     flex: 1;
 }
+/* Book a consultation Styles */
 
+.book-a-consultation_content{
+min-height: 75vh;
+padding-top: 5rem;
+}
+.book-a-consultation_content h1{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 70%;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+.book-a-consultation_content h1 a{
+    color: var(--color-primary);
+    cursor: pointer;
+    text-decoration: none;
+}
 /* Consultant Page Styles */
 
 .consultant-hero_container {
@@ -276,7 +339,12 @@ p {
     letter-spacing: 0.1px;
     color: var(--color-primary);
 }
-
+.consultant-hero_container .consultant-hero_content .consultant-hero_right .consultant-image{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
 .consultant-hero_container .consultant-hero_content .consultant-hero_right .consultant-image img {
     width: 28rem;
     height: 28rem;
@@ -536,14 +604,15 @@ display: none;
     width: 0.8rem;
     opacity: 1;
     border-radius: 50%;
-    background-color: var(--color-bg-blue);
-    border: 1px solid transparent;
+        background-color: transparent;
+
+    border: 1px solid var(--color-bg-blue);
 }
 
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    background-color: transparent;
-    border-color: var(--color-bg-blue);
+    background-color: var(--color-bg-blue);
+
 }
 
 /* Contact Styles */
@@ -1028,6 +1097,13 @@ display: none;
     cursor: pointer;
 }
 
+/* Terms and Conditions */
+
+.terms-and-conditions_container{
+padding-top: 4rem;
+padding-bottom: 6rem;
+}
+
 /* Media Queries */
 @media screen and (min-width:1600px) and (max-width:1900px) {
     html {
@@ -1054,6 +1130,29 @@ display: none;
 }
 
 @media screen and (max-width:991px) {
+    .book-a-consultation_content h1{
+        font-size: 1.5rem;
+    }
+    .terms-and-conditions_container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.terms-and-conditions_content {
+    gap: 2rem;
+}
+.terms-and-conditions_content>p {
+    font-size: 1.125rem;
+}
+.terms-and-conditions-block h2
+ {
+    font-size: 1.25rem;
+}
+.terms-and-conditions-block {
+    gap: 0.5rem;
+}
+.terms-and-conditions-block ul li {
+    font-size: 1rem;
+}
 .location_section {
     padding-bottom: 45%;
 }
@@ -1619,6 +1718,16 @@ display: none;
 }
 
 @media screen and (max-width:479px) {
+        .book-a-consultation_content h1{
+        font-size: 1.25rem;
+        max-width: 90%;
+    }
+        .terms-and-conditions_container {
+        padding-top: 1rem;
+    }
+    .terms-and-conditions_content {
+        gap: 1rem;
+    }
         .carousel_card_wrapper .carousel_card .carousel_card-top h3 {
         font-size: 2.5rem;
     }
