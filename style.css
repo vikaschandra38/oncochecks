@@ -1032,7 +1032,7 @@ display: none;
     align-items: flex-start;
 }
 
-.insights_container .insights_content .insights_details_list .insights_details_list-item img {
+.insights_container .insights_content .insights_details_list .insights_details_list-item>img {
     width: 100%;
     height: 40rem;
     object-fit: cover;
@@ -1065,7 +1065,102 @@ display: none;
     font-weight: 400;
     color: var(--color-pink-darker);
 }
-
+.insights_container .insights_content .insights_list ul li a.active{
+    color: var(--color-text);
+    position: relative;
+    display: block;
+    padding-left: 1rem;
+}
+.insights_container .insights_content .insights_list ul li a.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.125rem;
+    background-color: var(--color-primary);
+}
+.insights_container .insights_content .insights_list>h2{
+font-family: 'CoFoSans';
+    font-size: 3.25rem;
+    color: var(--color-text);
+    line-height: 1.2;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item .header h1{
+        font-size: 2.5rem;
+    color: var(--color-text);
+    line-height: 1.2;
+    font-family: 'CoFoSans';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.125rem;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item .header h1 span{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    line-height: 1.2;
+    font-family: 'CoFoSans';
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    display: block;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>h2{
+      font-size: 2rem;
+    color: var(--color-text);
+    line-height: 1.4;
+    font-family: 'CoFoSans';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>h3{
+        font-size: 1.5rem;
+    color: var(--color-primary);
+    line-height: 1.4;
+    font-family: 'CoFoSans';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>blockquote{
+        font-size: 2rem;
+    color: var(--color-primary);
+    line-height: 1.5;
+    font-family: 'CoFoSans';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>ul{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>ul li{
+ 
+    font-size: 1.25rem;
+    color: var(--color-text);
+    line-height: 1.75rem;
+    font-family: 'CoFoSans';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: 0.5px;
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>ul li a{
+    color: var(--color-text);
+}
+.insights_container .insights_content .insights_details_list .insights_details_list-item>ul li span{
+   font-size: 1.4rem;
+   font-weight: bold;
+   color: var(--color-primary);
+}
 /* Cookie Styles */
 #cookie-banner {
     position: fixed;
@@ -1130,6 +1225,22 @@ padding-bottom: 6rem;
 }
 
 @media screen and (max-width:991px) {
+    .insights_container .insights_content .insights_details_list .insights_details_list-item {
+    gap: 1.5rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item .header h1 {
+    font-size: 2rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>h2 {
+    font-size: 1.5rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>blockquote {
+    font-size: 1.25rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>h3
+    {
+        font-size: 1.2rem;
+    }
     .book-a-consultation_content h1{
         font-size: 1.5rem;
     }
@@ -1582,7 +1693,7 @@ padding-bottom: 6rem;
         gap: 1rem;
     }
 
-    .insights_container .insights_content .insights_details_list .insights_details_list-item img {
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>img {
         height: 20rem;
     }
 
@@ -1647,7 +1758,7 @@ padding-bottom: 6rem;
         flex-direction: column;
         gap: 2rem;
     }
-        .insights_container .insights_content .insights_details_list .insights_details_list-item img {
+        .insights_container .insights_content .insights_details_list .insights_details_list-item>img {
         height: 25rem;
     }
         .insights_container .insights_content .insights_list {
@@ -1718,6 +1829,18 @@ padding-bottom: 6rem;
 }
 
 @media screen and (max-width:479px) {
+        .insights_container .insights_content .insights_details_list .insights_details_list-item {
+        gap: 1rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>ul li{
+        font-size: 1rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>ul li span{
+        font-size: 1.125rem;
+    }
+    .insights_container .insights_content .insights_details_list .insights_details_list-item>ul {
+    gap: 0.25rem;
+}
         .book-a-consultation_content h1{
         font-size: 1.25rem;
         max-width: 90%;
@@ -1743,7 +1866,7 @@ padding-bottom: 6rem;
     .carousel_card_wrapper .carousel_card .carousel_card-bottom p.ex {
         font-size: 1rem;
     }
-        .insights_container .insights_content .insights_details_list .insights_details_list-item img {
+        .insights_container .insights_content .insights_details_list .insights_details_list-item>img {
         height: 18rem;
     }
         .location-facilities_content {
