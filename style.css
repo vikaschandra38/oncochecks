@@ -1907,6 +1907,7 @@ position: relative;
     }
     p{
         font-size: 1.25rem;
+        letter-spacing: 0.1px;
     }
     .nav_links_container a{
         font-size: 1.25rem;
