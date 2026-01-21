@@ -13,7 +13,7 @@ $(document).ready(function () {
     // toggle current
     parent.find('.faq_answer').slideToggle();
     const icon = $(this).find('img');
-    icon.addClass('active');
+    icon.toggleClass('active');
   });
 
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
             // toggle current
             parent.find('.accordion-dropdown').slideToggle();
             const icon = $(this).find('img');
-            icon.addClass('active');
+            icon.toggleClass('active');
         });
 
 
@@ -86,6 +86,10 @@ $('#close-btn').click(function(){
     $('.nav_links_container').toggleClass('active');
 });
 
+$("#copyBtn").on("click", function () {
+  const text = "OncoChecks 10 Harley St London W1G 9PF";
+  navigator.clipboard.writeText(text);
+});
 
 // Carousel
      $('.carousel-main').slick({
