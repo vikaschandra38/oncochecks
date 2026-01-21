@@ -2027,3 +2027,23 @@ display: block;
     }
 }
 
+@media screen and (max-width:390px){
+      html{
+        font-size: 15px;
+    }
+    .footer_container .footer_btn-container{
+        flex-direction: column;
+        gap: 1rem;
+    
+    }
+    #cookie-banner{
+        text-align: -webkit-center;
+    }
+    #cookie-banner>button{
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
+        
+    }
+}
+
