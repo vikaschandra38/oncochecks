@@ -190,6 +190,11 @@ p {
     align-items: center;
     justify-content: center;
 }
+.footer_container .footer_btn-container a:last-child{
+    font-size: 15px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem; 
+}
 .hero-img{
     display: none;
 }
