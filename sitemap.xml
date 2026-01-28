@@ -3,14 +3,14 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.oncochecks.com/index.html</loc>
+    <loc>https://www.oncochecks.com</loc>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <!-- Core Pages -->
   <url>
-    <loc>https://www.oncochecks.com/screening-services.html</loc>
+    <loc>https://www.oncochecks.com/screening-and-fees.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -84,7 +84,7 @@
   </url>
 
   <url>
-    <loc>https://www.oncochecks.com/cookies.html</loc>
+    <loc>https://www.oncochecks.com/cookies-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
