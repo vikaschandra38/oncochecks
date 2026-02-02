@@ -93,7 +93,9 @@ p {
     font-display: swap;
     letter-spacing: 0.5px;
 }
-
+p a{
+color: inherit;
+}
 .close-btn-container {
     display: none;
 }
