@@ -94,7 +94,13 @@ p {
     letter-spacing: 0.5px;
 }
 p a{
-color: inherit;
+  color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+p a:hover{
+      color: #9B6B7C;
+
 }
 .close-btn-container {
     display: none;
