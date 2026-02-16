@@ -170,7 +170,32 @@ p a:hover{
     align-items: center;
     padding: 2rem 0rem;
 }
-
+.footer_container .footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer_container .footer-left .social-links{
+    display: flex;
+    gap: 1rem;
+}
+.footer_container .footer-left .social-links a{
+    display: block;
+}
+.footer_container .footer-left .social-links a img{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+}
+.footer_container .footer-left .social-links a img.hover-img{
+    display: none;
+}
+.footer_container .footer-left .social-links a:hover img.hover-img{
+    display: block;
+}
+.footer_container .footer-left .social-links a:hover img.regular-img{
+    display: none;
+}
 .footer_container .footer_links {
     display: flex;
     gap: 0.5rem;
@@ -1285,6 +1310,13 @@ padding-bottom: 6rem;
 }
 
 @media screen and (max-width:991px) {
+    .footer_container .footer-left .social-links{
+        justify-content: center;
+    }
+    .footer_container .footer-left .social-links a img{
+        height: 2rem;
+        width: 2rem;
+    }
     .insights_container .insights_content .insights_details_list .insights_details_list-item {
     gap: 1.5rem;
     }
